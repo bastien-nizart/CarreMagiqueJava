@@ -1,0 +1,11 @@
+# IntelliJ
+*.iml
+/out
+.idea
+
+# Java
+/lib
+*.jar
+
+# MacOS
+.DS_Store
