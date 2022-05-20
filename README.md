@@ -45,7 +45,7 @@ boolean resultat = carre.estMagique()
 
 ### Trouver la constante magique
 
-La constante magique d'un carré de taille `n`est le nombre auquel est égal la somme des lignes, des colonnes, des 
+La constante magique d'un carré de taille `n` est le nombre auquel est égal la somme des lignes, des colonnes, des 
 diagonales.
 
 Pour la trouver à partir du programme, pas besoin d'instancier un carré, il suffit d'exécuter une méthode statique de
