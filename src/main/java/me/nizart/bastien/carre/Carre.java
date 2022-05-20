@@ -102,6 +102,17 @@ public class Carre {
 	}
 
 	/**
+	 * Cette méthode permet de trouver la "constante magique".
+	 * À partir de la formule ci-dessous.
+	 * (n(n*n-1))/2
+	 * @param dimension nombre de chiffres dans une ligne.
+	 * @return int constante magique.
+	 */
+	public static int trouverConstanteMagique(int dimension) {
+		return (dimension*(dimension*dimension+1))/2;
+	}
+
+	/**
 	 * Cette méthode va vérifier si notre carré est magique.
 	 * Avec l'aide des deux conditions suivantes :
 	 * - sommes(diagonale) = sommes(colonne) = sommes(ligne)

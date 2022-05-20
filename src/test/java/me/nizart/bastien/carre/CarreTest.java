@@ -39,6 +39,13 @@ class CarreTest {
 	}
 
 	@Test
+	@DisplayName("Test trouver constante magique")
+	void testTrouverConstanteMagique() {
+		assertEquals(15, Carre.trouverConstanteMagique(3));
+		assertEquals(111, Carre.trouverConstanteMagique(6));
+	}
+
+	@Test
 	@DisplayName("Test que le carré est bien magique")
 	void estMagique() {
 		assertEquals(true, carreTest.estMagique());
