@@ -121,22 +121,23 @@ public class Carre {
 	 * @return boolean la vérification de la condition
 	 */
 	public boolean estMagique() {
+		int constanteMagique = Carre.trouverConstanteMagique(this.dimension);
+
 		// Diagonales
-		int[] sommesDiag = this.getSommesDiagonales();
-		if (sommesDiag[0] != sommesDiag[1]) {
+		if ((getSommesDiagonales()[0] != constanteMagique) || (getSommesDiagonales()[1] != constanteMagique)) {
 			return false;
 		}
 
 		// Colonnes
 		for (int i = 0; i < dimension; i++) {
-			if (this.getSommeColonne(i) != sommesDiag[0]) {
+			if (this.getSommeColonne(i) != constanteMagique) {
 				return false;
 			}
 		}
 
 		// Lignes
 		for (int i = 0; i < dimension; i++) {
-			if (this.lignes[i].getSommeLigne() != sommesDiag[0]) {
+			if (this.lignes[i].getSommeLigne() != constanteMagique) {
 				return false;
 			}
 		}
