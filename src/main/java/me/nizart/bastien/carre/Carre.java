@@ -123,6 +123,10 @@ public class Carre {
 	public boolean estMagique() {
 		int constanteMagique = Carre.trouverConstanteMagique(this.dimension);
 
+		if (!this.chiffreUnique()) {
+			return false;
+		}
+
 		// Diagonales
 		if ((getSommesDiagonales()[0] != constanteMagique) || (getSommesDiagonales()[1] != constanteMagique)) {
 			return false;
@@ -142,6 +146,6 @@ public class Carre {
 			}
 		}
 
-		return this.chiffreUnique();
+		return true;
 	}
 }
